@@ -30,6 +30,7 @@ const Post = () => {
           style={{ outline: "none" }}
           onClick={successTextRemover}
           placeholder="ID"
+          label="Outlined" variant="outlined"
           {...register("id")}
           
         />
@@ -37,6 +38,7 @@ const Post = () => {
           style={{ outline: "none" }}
           onClick={successTextRemover}
           placeholder="Title"
+          label="Outlined" variant="outlined"
           {...register("title")}
          
         />
@@ -44,10 +46,11 @@ const Post = () => {
           style={{ outline: "none" }}
           onClick={successTextRemover}
           placeholder="Body"
+          label="Outlined" variant="outlined"
           {...register("body")}
           
         />
-        <Button type="submit">Add blog</Button>
+        <Button type="submit" variant="contained" color="primary">Add blog</Button>
       </form>
       <p>{success}</p>
     </div>
